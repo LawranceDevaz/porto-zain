@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zain — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor-ring"></div>
+  <div class="cursor-dot"></div>
+
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+
+  <!-- Banner Bar -->
+  <div class="banner-bar">
+    <div class="banner-bar-inner">
+      <div class="flex items-center gap-3">
+        <span class="status-dot"></span>
+        <span class="status-text">Available for projects</span>
+      </div>
+      <div class="banner-right">
+        <span class="banner-divider">—</span>
+        <span class="banner-time" id="liveTime">Loading...</span>
+        <span class="banner-divider">—</span>
+        <a href="#contact" class="banner-cta">Hire Me</a>
+      </div>
+      <div class="banner-progress-wrap">
+        <div class="banner-progress" style="width:0%"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Zain</a>
+      <div class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#testimonials" class="nav-link">Reviews</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <canvas id="particles"></canvas>
+    <div class="hero-grid-bg"></div>
+    <div class="hero-container">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="hero-label">— Introduction</p>
+          <h1 class="hero-title">
+            <span class="reveal-text">Zain</span>
+          </h1>
+          <div class="hero-role-wrap">
+            <p class="hero-role" id="typewriter"></p>
+          </div>
+          <p class="hero-desc">
+            SMK RPL student · Tech enthusiast · Builder. I turn ideas into code and machines into magic.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">
+              See My Work <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn-outline">
+              Let's Talk
+            </a>
+          </div>
+        </div>
+        <div class="hero-avatar-wrap">
+          <div class="hero-avatar">
+            <img src="https://i.postimg.cc/vB2JgNNK/zainur.png" alt="Zain">
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator">ↆ Scroll</a>
+  </section>
+
+  <!-- About -->
+  <section class="section section-light" id="about">
+    <div class="section-container">
+      <p class="section-label">— About</p>
+      <div class="about-grid">
+        <div class="about-main">
+          <h2 class="section-title">
+            <span class="reveal-text">Who is Zain?</span>
+          </h2>
+          <div class="about-text">
+            <p>
+              I'm Zain — an SMK student with a passion for technology that goes way beyond the classroom. 
+              I started coding in 2023 And the next time i started some new skill like cyber security Soc Analyst
+            </p>
+            <p>
+              From repairing laptops and building custom PCs to developing full-stack applications, I love understanding
+              how things work at every layer — hardware, software, and everything in between.
+            </p>
+            <p>
+              I believe in building things that matter — clean, functional, and made with care.
+            </p>
+          </div>
+          <div class="stats-row">
+            <div class="stat-item">
+              <p class="stat-number counter" data-target="4">0+</p>
+              <p class="stat-label">Clients Served</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-number counter" data-target="8">0+</p>
+              <p class="stat-label">Projects Done</p>
+            </div>
+            <div class="stat-item">
+              <p class="stat-number counter" data-target="3">0+</p>
+              <p class="stat-label">Years Coding</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-sidebar">
+          <div class="info-card">
+            <h3 class="info-card-title">Quick Info</h3>
+            <ul class="info-list">
+              <li class="info-item">
+                <span class="info-key">Name</span>
+                <span class="info-value">Zain</span>
+              </li>
+              <li class="info-item">
+                <span class="info-key">Location</span>
+                <span class="info-value">Indonesia</span>
+              </li>
+              <li class="info-item">
+                <span class="info-key">School</span>
+                <span class="info-value">SMK Negeri 5 Malang</span>
+              </li>
+              <li class="info-item">
+                <span class="info-key">Focus</span>
+                <span class="info-value">Full-Stack Dev & Cysec(SocAnalyst)</span>
+              </li>
+              <li class="info-item">
+                <span class="info-key">Hobby</span>
+                <span class="info-value">Tech, Playing Games</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee Banners -->
+  <section class="banner-section">
+    <div class="banner banner-1">
+      <div class="marquee-content">
+        <div class="marquee-part">
+          <span>TAILORED WEB DEVELOPMENT FOR YOU</span> <span class="star">✦</span>
+          <span>DRIVEN BY PASSION</span> <span class="star">✦</span>
+          <span>BUILT WITH CODE</span> <span class="star">✦</span>
+          <span>TAILORED WEB DEVELOPMENT FOR YOU</span> <span class="star">✦</span>
+          <span>DRIVEN BY PASSION</span> <span class="star">✦</span>
+          <span>BUILT WITH CODE</span> <span class="star">✦</span>
+        </div>
+        <div class="marquee-part">
+          <span>TAILORED WEB DEVELOPMENT FOR YOU</span> <span class="star">✦</span>
+          <span>DRIVEN BY PASSION</span> <span class="star">✦</span>
+          <span>BUILT WITH CODE</span> <span class="star">✦</span>
+          <span>TAILORED WEB DEVELOPMENT FOR YOU</span> <span class="star">✦</span>
+          <span>DRIVEN BY PASSION</span> <span class="star">✦</span>
+          <span>BUILT WITH CODE</span> <span class="star">✦</span>
+        </div>
+      </div>
+    </div>
+    <div class="banner banner-2">
+      <div class="marquee-content">
+        <div class="marquee-part">
+          <span>INNOVATIVE SELF-MADE CREATIVE</span> <span class="star">✦</span>
+          <span>CUSTOM WEB EXPERIENCES</span> <span class="star">✦</span>
+          <span>DESIGNED FOR FUTURE</span> <span class="star">✦</span>
+          <span>INNOVATIVE SELF-MADE CREATIVE</span> <span class="star">✦</span>
+          <span>CUSTOM WEB EXPERIENCES</span> <span class="star">✦</span>
+          <span>DESIGNED FOR FUTURE</span> <span class="star">✦</span>
+          <span>INNOVATIVE SELF-MADE CREATIVE</span> <span class="star">✦</span>
+          <span>CUSTOM WEB EXPERIENCES</span> <span class="star">✦</span>
+          <span>DESIGNED FOR FUTURE</span> <span class="star">✦</span>
+          <span>INNOVATIVE SELF-MADE CREATIVE</span> <span class="star">✦</span>
+          <span>CUSTOM WEB EXPERIENCES</span> <span class="star">✦</span>
+          <span>DESIGNED FOR FUTURE</span> <span class="star">✦</span>
+        </div>
+        <div class="marquee-part">
+          <span>INNOVATIVE SELF-MADE CREATIVE</span> <span class="star">✦</span>
+          <span>CUSTOM WEB EXPERIENCES</span> <span class="star">✦</span>
+          <span>DESIGNED FOR FUTURE</span> <span class="star">✦</span>
+          <span>INNOVATIVE SELF-MADE CREATIVE</span> <span class="star">✦</span>
+          <span>CUSTOM WEB EXPERIENCES</span> <span class="star">✦</span>
+          <span>DESIGNED FOR FUTURE</span> <span class="star">✦</span>
+          <span>INNOVATIVE SELF-MADE CREATIVE</span> <span class="star">✦</span>
+          <span>CUSTOM WEB EXPERIENCES</span> <span class="star">✦</span>
+          <span>DESIGNED FOR FUTURE</span> <span class="star">✦</span>
+          <span>INNOVATIVE SELF-MADE CREATIVE</span> <span class="star">✦</span>
+          <span>CUSTOM WEB EXPERIENCES</span> <span class="star">✦</span>
+          <span>DESIGNED FOR FUTURE</span> <span class="star">✦</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section-light" id="skills">
+    <div class="section-container">
+      <p class="section-label">— Skills</p>
+      <h2 class="section-title">
+        <span class="reveal-text">What I Bring to the Table</span>
+      </h2>
+      <p class="section-subtitle">From low-level systems to modern web frameworks — I adapt fast and build solid.</p>
+      <div class="skills-grid">
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">HTML / CSS / Tailwind</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-bar" data-width="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">JavaScript / Node.js</span>
+              <span class="skill-pct">65%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-bar" data-width="70"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">PC Hardware / Repair</span>
+              <span class="skill-pct">100%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-bar" data-width="90"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Python</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-bar" data-width="65"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">MySQL / SQL</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-bar" data-width="70"></div>
+            </div>
+          </div>
+        </div>
+        <div class="tools-grid-wrap">
+          <h3 class="tools-title">Tools & Technologies</h3>
+          <div class="tools-grid">
+            <div class="tool-item" data-tool="JavaScript">
+              <i class="fab fa-js"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="tool-item" data-tool="Node.js">
+              <i class="fab fa-node-js"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="tool-item" data-tool="MySQL">
+              <i class="fas fa-database"></i>
+              <span>MySQL</span>
+            </div>
+            <div class="tool-item" data-tool="Git">
+              <i class="fab fa-git-alt"></i>
+              <span>Git</span>
+            </div>
+            <div class="tool-item" data-tool="Hardware">
+              <i class="fas fa-microchip"></i>
+              <span>Hardware</span>
+            </div>
+            <div class="tool-item" data-tool="Python">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="tool-item" data-tool="C++">
+              <i class="fas fa-code"></i>
+              <span>C++</span>
+            </div>
+            <div class="tool-item" data-tool="Figma">
+              <i class="fab fa-figma"></i>
+              <span>Figma</span>
+            </div>
+            <div class="tool-item" data-tool="Linux">
+              <i class="fas fa-terminal"></i>
+              <span>Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee PROJECTS -->
+  <section class="marquee-section">
+    <div class="marquee marquee-reverse">
+      <div class="marquee-inner">
+        <span>PROJECTS</span><span class="mx-8">✦</span>
+        <span>PROJECTS</span><span class="mx-8">✦</span>
+        <span>PROJECTS</span><span class="mx-8">✦</span>
+        <span>PROJECTS</span><span class="mx-8">✦</span>
+        <span>PROJECTS</span><span class="mx-8">✦</span>
+        <span>PROJECTS</span><span class="mx-8">✦</span>
+        <span>PROJECTS</span><span class="mx-8">✦</span>
+        <span>PROJECTS</span><span class="mx-8">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section section-light" id="projects">
+    <div class="section-container">
+      <p class="section-label">— Projects</p>
+      <div class="section-header-row">
+        <h2 class="section-title">
+          <span class="reveal-text">Things I've Built</span>
+        </h2>
+        <a href="#" class="view-all">
+          View All <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://i.postimg.cc/pT29Xq9s/Whats-App-Image-2026-07-21-at-21-49-17.jpg" alt="PC">
+          </div>
+          <div class="project-info">
+            <span class="project-tag">PC build</span>
+            <h3 class="project-title">PC Build</h3>
+            <p class="project-desc">Custom Pc Build And Service another GPU Dead</p>
+            <div class="project-tags">
+              <span>Hardware</span>
+              <span>TroubleShoot</span>
+              <span>Service</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://i.postimg.cc/L6ZjWQjf/Whats-App-Image-2026-07-21-at-21-49-18-(1).jpg" alt="service">
+          </div>
+          <div class="project-info">
+            <span class="project-tag">CCTV</span>
+            <h3 class="project-title">Custom Firmware</h3>
+            <p class="project-desc">Custom firmware for CCTV DAHUA and fix input lagging in monitor</p>
+            <div class="project-tags">
+              <span>Hardware</span>
+              <span>Troubleshoot</span>
+              <span>CCTV</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://i.postimg.cc/PxzR1r5r/Whats-App-Image-2026-07-21-at-21-49-18.jpg" alt="Service">
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Hardware</span>
+            <h3 class="project-title">Repair VGA</h3>
+            <p class="project-desc">Unlock gpu CMP 30HX Gpu mining into GPU Gaming unlock bus interface X16.</p>
+            <div class="project-tags">
+              <span>Hardware</span>
+              <span>Troubleshoot</span>
+              <span>Service</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee GALLERY -->
+  <section class="marquee-section">
+    <div class="marquee">
+      <div class="marquee-inner">
+        <span>GALLERY</span><span class="mx-8">✦</span>
+        <span>GALLERY</span><span class="mx-8">✦</span>
+        <span>GALLERY</span><span class="mx-8">✦</span>
+        <span>GALLERY</span><span class="mx-8">✦</span>
+        <span>GALLERY</span><span class="mx-8">✦</span>
+        <span>GALLERY</span><span class="mx-8">✦</span>
+        <span>GALLERY</span><span class="mx-8">✦</span>
+        <span>GALLERY</span><span class="mx-8">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section section-light" id="gallery">
+    <div class="section-container">
+      <p class="section-label">— Gallery</p>
+      <h2 class="section-title">
+        <span class="reveal-text">Snapshots</span>
+      </h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://i.postimg.cc/nzyw8jSS/Whats-App-Image-2026-07-21-at-22-31-31.jpg" alt="Gallery 1">
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.postimg.cc/Wbb0NbR0/Whats-App-Image-2026-07-21-at-22-31-32.jpg" alt="Gallery 2">
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.postimg.cc/x1Bm3vX4/Whats-App-Image-2026-07-21-at-22-31-32-(1).jpg" alt="Gallery 3">
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.postimg.cc/MTmjwg92/Whats-App-Image-2026-07-21-at-22-31-33.jpg" alt="Gallery 4">
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.postimg.cc/4NdhCLtS/Whats-App-Image-2026-07-21-at-22-31-33-(1).jpg" alt="Gallery 5">
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.postimg.cc/52QYyXsL/Whats-App-Image-2026-07-21-at-22-31-34.jpg" alt="Gallery 6">
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.postimg.cc/7Lg51p8Z/Whats-App-Image-2026-07-21-at-22-31-34-(1).jpg" alt="Gallery 7">
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.postimg.cc/J0htL0yP/Whats-App-Image-2026-07-21-at-22-31-34-(2).jpg" alt="Gallery 8">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee REVIEWS -->
+  <section class="marquee-section">
+    <div class="marquee marquee-reverse">
+      <div class="marquee-inner">
+        <span>REVIEWS</span><span class="mx-8">✦</span>
+        <span>REVIEWS</span><span class="mx-8">✦</span>
+        <span>REVIEWS</span><span class="mx-8">✦</span>
+        <span>REVIEWS</span><span class="mx-8">✦</span>
+        <span>REVIEWS</span><span class="mx-8">✦</span>
+        <span>REVIEWS</span><span class="mx-8">✦</span>
+        <span>REVIEWS</span><span class="mx-8">✦</span>
+        <span>REVIEWS</span><span class="mx-8">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section section-light" id="testimonials">
+    <div class="section-container">
+      <p class="section-label">— Reviews</p>
+      <div class="section-header-row">
+        <h2 class="section-title">
+          <span class="reveal-text">What Clients Say</span>
+        </h2>
+        <div class="rating-badge">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <span>4.9 <span class="rating-count">(24 reviews)</span></span>
+        </div>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "Membantu saya mengerti computer science, membantu memperbaiki hardware dan software yang bermasalah"
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">As</div>
+            <div>
+              <p class="author-name">Aris</p>
+              <p class="author-role">Laptop Servis & IT Support</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "Bantuin setup server SAMP. Kerjaannya rapi, dokumentasi jelas, dan fast respon. Gacorrrrr!"
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">Df</div>
+            <div>
+              <p class="author-name">Dafit</p>
+              <p class="author-role">Server Dev</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+          </div>
+          <p class="testimonial-text">
+            "Gokil service berbagai apapun bisa mau service pc, laptop, ataupun hp, Overall Good Nice one zain"
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">Dn</div>
+            <div>
+              <p class="author-name">Arief</p>
+              <p class="author-role">Service PC</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee CONTACT -->
+  <section class="marquee-section">
+    <div class="marquee">
+      <div class="marquee-inner">
+        <span>CONTACT ME</span><span class="mx-6">✦</span>
+        <span>CONTACT ME</span><span class="mx-6">✦</span>
+        <span>CONTACT ME</span><span class="mx-6">✦</span>
+        <span>CONTACT ME</span><span class="mx-6">✦</span>
+        <span>CONTACT ME</span><span class="mx-6">✦</span>
+        <span>CONTACT ME</span><span class="mx-6">✦</span>
+        <span>CONTACT ME</span><span class="mx-6">✦</span>
+        <span>CONTACT ME</span><span class="mx-6">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-light" id="contact">
+    <div class="section-container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="section-label">— Contact</p>
+          <h2 class="section-title">
+            <span class="reveal-text">Let's Do It!</span>
+          </h2>
+          <p class="contact-desc">Got a project, need a repair, or just want to chat about tech? Hit me up.</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <p class="contact-item-label">Email</p>
+                <p class="contact-item-value">zainuru261@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <div>
+                <p class="contact-item-label">Instagram</p>
+                <p class="contact-item-value">@zainur_zx</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div>
+                <p class="contact-item-label">GitHub</p>
+                <p class="contact-item-value">github.com/LawranceDevaz</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks for reaching out! I\'ll get back to you soon.');">
+          <div class="form-row">
+            <input type="text" placeholder="Name" required class="form-input">
+            <input type="email" placeholder="Email" required class="form-input">
+          </div>
+          <input type="text" placeholder="Subject" class="form-input">
+          <textarea rows="5" placeholder="Message" required class="form-input form-textarea"></textarea>
+          <button type="submit" class="form-submit">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2026 Zainur Rochim <i>✦</i></p>
+      <div class="footer-socials">
+        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
